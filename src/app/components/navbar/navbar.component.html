@@ -1,0 +1,14 @@
+<mat-grid-list cols="4" rowHeight="50px">
+  <mat-grid-tile [routerLink]="['/home']">Home</mat-grid-tile>
+  <mat-grid-tile [routerLink]="['/precios']">Precios</mat-grid-tile>
+  <mat-grid-tile [routerLink]="['/protegida']">Protegidos</mat-grid-tile>
+  <mat-grid-tile>
+    <span>
+      <div class="login-buttons">
+        <button (click)="auth.loginWithRedirect()" mat-raised-button color="primary">Login</button>
+        <button  mat-raised-button color="warn" style="margin-left: 20px;">LogOut</button>
+      </div>
+
+    </span>
+  </mat-grid-tile>
+</mat-grid-list>
